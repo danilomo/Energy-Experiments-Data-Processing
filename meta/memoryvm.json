@@ -1,0 +1,6 @@
+[
+	{"name": "timestamp", "description": "Current time in milliseconds", "unit": "ms" },
+	{"name": "memory", "description": "Memory", "unit": "KB" },
+	{"name": "rss", "description": "Resident set size", "unit": "KB" },
+	{"name": "dirty", "description": "Dirty", "unit": "KB" }
+]

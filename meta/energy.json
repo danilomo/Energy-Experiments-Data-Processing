@@ -1,0 +1,4 @@
+[
+	{"name": "timestamp", "description": "Current time in milliseconds" },
+	{"name": "power_active", "description": "Power Active", "unit": "W", "list": true, "size": 20 }
+]

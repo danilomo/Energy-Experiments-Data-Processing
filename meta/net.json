@@ -1,0 +1,7 @@
+[
+	{"name": "timestamp", "description": "Current time in milliseconds", "unit": "ms" },
+	{"name": "download", "description": "Download throughput", "unit": "b/s" },
+	{"name": "upload", "description": "Upload throughput", "unit": "b/s" },
+	{"name": "downloadPackets", "description": "Download throughput (packets)", "unit": "packets/s" },
+	{"name": "uploadPackets", "description": "Upload throughput (packets)", "unit": "packets/s" }	
+]

@@ -1,0 +1,9 @@
+[
+	{"name": "timestamp", "description": "Current time in milliseconds", "unit": "ms" },
+	{"name": "total", "description": "total", "unit": "KB" },
+	{"name": "used", "description": "used", "unit": "KB" },
+	{"name": "free", "description": "free", "unit": "KB" },
+	{"name": "shared", "description": "shared", "unit": "KB" },
+	{"name": "buff_cache", "description": "buff_cache", "unit": "KB" },
+	{"name": "available", "description": "available", "unit": "KB" }
+]

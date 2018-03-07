@@ -1,0 +1,8 @@
+[
+	{"name": "timestamp", "description": "Current time in milliseconds", "unit": "ms" },
+	{"name": "usr", "description": "usr", "unit": "percentage" },
+	{"name": "system", "description": "system", "unit": "percentage" },
+	{"name": "guest", "description": "guest", "unit": "percentage" },
+	{"name": "CPU", "description": "CPU", "unit": "percentage" },
+	{"name": "core_number", "description": "core_number", "unit": "" }
+]

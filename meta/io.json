@@ -1,0 +1,5 @@
+[
+	{"name": "timestamp", "description": "Current time in milliseconds", "unit": "ms" },
+	{"name": "readt", "description": "Read throughput", "unit": "K/s" },
+	{"name": "writet", "description": "Write throughput", "unit": "K/s" }
+]

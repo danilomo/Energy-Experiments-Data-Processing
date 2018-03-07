@@ -1,0 +1,8 @@
+experiments/*
+processing/*
+python/workspace logs/*
+__pycache__/
+*.py[cod]
+project.org*
+*~
+R/old_scripts/*

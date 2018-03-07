@@ -1,0 +1,13 @@
+[
+	{"name": "timestamp", "description": "Current time in milliseconds", "unit": "ms" },
+	{"name": "usr", "description": "usr", "unit": "percentage" },
+	{"name": "nice", "description": "nice", "unit": "percentage" },
+	{"name": "sys", "description": "sys", "unit": "percentage" },
+	{"name": "iowait", "description": "iowait", "unit": "percentage" },
+	{"name": "irq", "description": "irq", "unit": "percentage" },
+	{"name": "soft", "description": "soft", "unit": "percentage" },
+	{"name": "steal", "description": "steal", "unit": "percentage" },
+	{"name": "guest", "description": "guest", "unit": "percentage" },
+	{"name": "gnice", "description": "gnice", "unit": "percentage" },
+	{"name": "idle", "description": "idle", "unit": "percentage" }
+]
