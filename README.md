@@ -2,7 +2,7 @@
 
 An organized collection of scripts and notebooks for processing data obtained from [energy measurement scripts](https://github.com/danilomo/energy_measurement_scripts).
 
-Organize your experimental design in a folder hierarchy, then use the [log_processing](python/log_processing.py) module for extracting a pandas dataframe for the obtained data.
+Organize your experimental design in a folder hierarchy, then use the [logprocessing](python/logprocessing.py) module for extracting a pandas dataframe for the obtained data.
 
 Usage:
 
