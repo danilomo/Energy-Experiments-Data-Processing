@@ -6,3 +6,6 @@ __pycache__/
 project.org*
 *~
 R/old_scripts/*
+r-to-python.org
+python/teste.*
+*.RData

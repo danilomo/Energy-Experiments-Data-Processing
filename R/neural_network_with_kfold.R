@@ -3,6 +3,8 @@ require(readr)
 library(tictoc)
 
 load("/home/danilo/Workspace/Energy-Experiments-Data-Processing/R/workspace.RData")
+#logall <- read_delim("~/Desktop/pendrive/processing/logs/logall.csv",
+#                     " ", escape_double = FALSE, trim_ws = TRUE)
 
 args = commandArgs(trailingOnly=TRUE)
 
@@ -115,8 +117,7 @@ regressionGen <- function(df){
   return(lm( power ~ cpunorm + I(cpunorm^2) + I(cpunorm^3) + I(cpunorm^4) + ionorm + I(ionorm^2) + I(ionorm^3) + I(ionorm^4) + netnorm + I(netnorm^2) + I(netnorm^3) + I(netnorm^4), data = df ))
 }
 
-#logall <- read_delim("~/Desktop/pendrive/processing/logs/logall.csv",
-#                     " ", escape_double = FALSE, trim_ws = TRUE)
+
 log1 = normalizeDf(process(logall))
 df = log1[sample(1:nrow(log1)), ]
 
@@ -133,8 +134,8 @@ f <- function(i){
   print(x)
   
   perror = percentualError( m, test, test$power)
-  #return(mean(perror))
-  t = (x$toc - x$tic)[[1]]
+  return(mean(perror))
+  #t = (x$toc - x$tic)[[1]]
 
   return(t)
 }
@@ -175,7 +176,8 @@ for( i in 10:10){
   tTestResult = t.test(err)
   r = c( i, mean(err), tTestResult[[4]][1], tTestResult[[4]][2])
   
-  print(r)
+  #print(r)
+  hist(err)
   
   stopCluster(cl)
 }
