@@ -7,6 +7,22 @@ import json
 from pprint import pprint
 from functools import reduce
 
+def get_dataframe_from_folder( dir_, meta, query ):
+        import pandas as pd
+        import io
+        
+        buffer_ = io.StringIO()
+        p = LogProcessor( directory = dir_, meta = meta, query = query, _file = buffer_)
+
+        p.process()
+        buffer_.flush()
+        buffer_.seek(0)
+        
+        df = pd.read_csv( buffer_, delimiter=' ', index_col = False)
+        buffer_.close()
+
+        return df
+
 class row: pass
 
 def mean(l):
